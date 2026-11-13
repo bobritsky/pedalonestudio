@@ -10,3 +10,5 @@
 .pricing-copy .compat-note{margin-top:0}
 .footer-right{flex-wrap:wrap}
 .windows-logo{display:inline-block;width:17px;height:17px;flex:none;color:#00a4ef;vertical-align:-3px;margin-right:6px}
+.checkout-wrap .buy-button{width:100%;min-height:62px;background:var(--purple);color:#110d1d;font:700 18px 'Space Grotesk',sans-serif;box-shadow:0 12px 32px #8e63ff38}
+.checkout-wrap .buy-button:hover{background:#c3abff;transform:translateY(-2px)}
