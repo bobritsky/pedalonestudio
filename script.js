@@ -2,6 +2,13 @@ const YOUTUBE_DEMO_URL = 'https://youtu.be/_Syt4atlYfo';
 
 const buyButton = document.querySelector('.buy-button');
 if (buyButton) {
+  const checkoutUrl = new URL(buyButton.href);
+  const landingParams = new URLSearchParams(window.location.search);
+  for (const name of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']) {
+    const value = landingParams.get(name);
+    if (value) checkoutUrl.searchParams.set(name, value);
+  }
+  buyButton.href = checkoutUrl.toString();
   buyButton.addEventListener('click', () => {
     gtag('event', 'buy_click');
   });
