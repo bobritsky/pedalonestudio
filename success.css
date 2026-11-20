@@ -1,0 +1,93 @@
+body {
+  background: radial-gradient(circle at 50% 42%, #332158 0, #171427 36%, #080b13 76%);
+}
+.success-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+.success-main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.success-card {
+  width: min(100%, 760px);
+  padding: clamp(34px, 6vw, 72px);
+  border: 1px solid #5d4b80;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #221c37, #151a27 65%);
+  box-shadow: 0 28px 90px #0007, 0 0 85px #6741aa25;
+  text-align: center;
+}
+.success-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 28px;
+  color: #b89aff;
+}
+.success-icon svg { width: 100%; height: 100%; }
+.success-kicker {
+  margin-bottom: 20px;
+  color: #c9b7ff;
+  font: 700 12px/1.4 'Space Grotesk', sans-serif;
+  letter-spacing: .2em;
+}
+.success-title {
+  margin: 0 auto 24px;
+  max-width: 620px;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.12;
+  letter-spacing: -.06em;
+  white-space: normal;
+}
+.success-title em { color: #b89aff; font-style: normal; }
+.success-message {
+  max-width: 540px;
+  margin: 0 auto;
+  color: #d4d6e1;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.success-hint {
+  margin: 16px 0 0;
+  color: #aeb7c8;
+  font-size: 15px;
+}
+.success-support {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 38px;
+  padding-top: 27px;
+  border-top: 1px solid #4b445b;
+  color: #b6bfd0;
+  font-size: 16px;
+}
+.success-support a {
+  width: fit-content;
+  margin: 0 auto;
+  color: #d8c8ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.success-support a:hover { color: #fff; }
+.success-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 22px;
+  padding-bottom: 28px;
+  border-top: 1px solid #282d3b;
+  color: #8e9aaf;
+  font-size: 13px;
+}
+@media (max-width: 650px) {
+  .success-main { padding-top: 36px; padding-bottom: 48px; }
+  .success-card { border-radius: 16px; }
+  .success-footer { flex-direction: column; gap: 7px; }
+}
